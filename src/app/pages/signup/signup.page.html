@@ -1,0 +1,34 @@
+<ion-content [fullscreen]="true">
+  <div class="header">
+    <ion-title class="tittle"><b>BIENVENIDO!</b></ion-title>
+    <p class="subTittle">Ingresa tus datos para crear tu cuenta</p>
+  </div>
+
+  <form action="">
+    <div class="ion-padding">
+      <ion-item class="ionItem">
+        <ion-input class="input" placeholder="Correo electrónico"></ion-input>
+        <ion-icon name="person-outline"></ion-icon>
+      </ion-item>
+      <ion-item class="ionItem">
+        <ion-input class="input" placeholder="Usuario"></ion-input>
+        <ion-icon name="person-outline"></ion-icon>
+      </ion-item>
+      <ion-item class="ionItem">
+      <ion-input class="input" placeholder="Contraseña"></ion-input>
+        <ion-icon name="lock-closed-outline"></ion-icon>
+      </ion-item>
+      
+        <ion-button expand="block" [routerLink]="['/home']" style="width: auto;">Registrate</ion-button>
+       
+      <div class="usuarionuevo">
+       <p>¿Ya tienes cuenta? <a [routerLink]="['/login']"> Inicia sesión ahora.</a></p> 
+      </div>
+      <div class="google"> <p class="subTittle">Inicia sesión con google</p>
+        <a [routerLink]="['/inicio-google']"><ion-icon name="logo-google" style="font-size: 45px;"></ion-icon></a>
+      </div>
+    </div>
+
+  </form>
+
+</ion-content>

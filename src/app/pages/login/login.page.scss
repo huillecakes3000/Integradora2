@@ -1,0 +1,74 @@
+
+.login {
+  font-family: 'Playwrite FR Moderne', sans-serif; /* Aplicar la fuente Playwrite FR Moderne */
+  /* Otros estilos si es necesario */
+}
+
+.input{
+  font-size: 300;
+}
+
+.ionItem{
+  --background: #f1f1f1;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.header{
+  margin-top: 80px;
+  margin-bottom: 50px;
+  text-align: center;
+  .subTittle{
+
+    color: #588157;
+    font-size: 0.9rem;
+
+  }
+  .tittle{
+    font-size: 2rem;
+  }
+
+}
+
+.usuarionuevo{
+  display: flex;
+  margin: auto;
+  flex-direction: row;
+  align-items: center;
+  position: absolute;
+  justify-content: center;
+  left: 0;
+
+  width: 80%;
+  right: 0;
+
+
+ 
+
+  a{
+    text-decoration: none;
+  }
+}
+
+.google{
+  margin-top: 1px;
+ 
+  text-align: center;
+  .subTittle{
+
+    color: #000000;
+    font-size: 0.9rem;
+
+  }
+}
+
+.contrasenaolvidada{
+  display: flex;
+  justify-content: flex-end;
+  a{
+    font-weight: 400;
+    font-size: 0.8rem;
+    text-decoration: none;
+
+  }
+}

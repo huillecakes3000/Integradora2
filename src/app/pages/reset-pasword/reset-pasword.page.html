@@ -1,0 +1,25 @@
+
+
+<ion-content [fullscreen]="true">
+  <div class="header">
+    <ion-title class="tittle">
+      Ingresa tu correo <br>
+      electrónico
+      <p class="subTittle">para recibir un link para recuperar tu contraseña</p>
+    </ion-title>
+  </div>
+  <form action="">
+    <div class="ion-padding">
+      <ion-item class="ionItem">
+        <ion-input placeholder="Correo" class="input"></ion-input>
+        <ion-icon name="person-outline"></ion-icon>
+      </ion-item>
+    </div>
+  </form>
+
+  <ion-fab vertical="bottom" horizontal="end" style="margin-bottom: 30px;">
+    <ion-fab-button [routerLink]="['/email-send']">
+      <ion-icon name="chevron-forward"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>

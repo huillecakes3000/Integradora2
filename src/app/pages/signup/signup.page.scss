@@ -1,0 +1,57 @@
+
+  
+  .input{
+    font-size: 300;
+  }
+  
+  .ionItem{
+    --background: #f1f1f1;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .header{
+    margin-top: 100px;
+    margin-bottom: 80px;
+    text-align: center;
+    .subTittle{
+  
+      color: #588157;
+      font-size: 0.9rem;
+  
+    }
+    .tittle{
+      font-size: 2rem;
+    }
+  
+  }
+  
+  
+  .usuarionuevo{
+    display: flex;
+    justify-content: flex-end;
+    p{
+      font-weight: 400;
+      font-size: 0.9rem;
+      text-decoration: none;
+    }
+    a{
+      font-weight: 400;
+      font-size: 0.9rem;
+      text-decoration: none;
+      color: #588157;
+  
+    }
+  }
+  
+.google{
+  margin-top: 1px;
+ 
+  text-align: center;
+  .subTittle{
+
+    color: #000000;
+    font-size: 0.9rem;
+
+  }
+}

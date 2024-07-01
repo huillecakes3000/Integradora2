@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { HomePageRoutingModule } from './home-routing.module';
+import { NotfoundPageRoutingModule } from './notfound-routing.module';
 
-import { HomePage } from './home.page';
+import { NotfoundPage } from './notfound.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    HomePageRoutingModule
+    NotfoundPageRoutingModule
   ],
-  declarations: [HomePage]
+  declarations: [NotfoundPage]
 })
-export class HomePageModule {}
+export class NotfoundPageModule {}
