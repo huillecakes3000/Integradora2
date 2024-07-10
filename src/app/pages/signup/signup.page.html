@@ -7,19 +7,28 @@
   <form action="">
     <div class="ion-padding">
       <ion-item class="ionItem">
-        <ion-input class="input" placeholder="Correo electrónico" type="email"></ion-input>
-        <ion-icon name="person-outline"></ion-icon>
+        <ion-input class="input" placeholder="Nombre completo" type="email" name="nombrecompleto"></ion-input>
+        <ion-icon name="person"></ion-icon>
       </ion-item>
       <ion-item class="ionItem">
-        <ion-input class="input" placeholder="Usuario (máximo 12 caracteres)" maxlength="12"></ion-input>
-        <ion-icon name="person-outline"></ion-icon>
+        <ion-input class="input" placeholder="Correo electrónico" type="email" name="email"></ion-input>
+        <ion-icon name="mail"></ion-icon>
       </ion-item>
       <ion-item class="ionItem">
-      <ion-input class="input" placeholder="Contraseña (entre 8 & 20 caracteres)" type="password" minlength="8" maxlength="20"></ion-input>
-        <ion-icon name="lock-closed-outline"></ion-icon>
+        <ion-input class="input" placeholder="Usuario (máximo 12 caracteres)" maxlength="12" name="user"></ion-input>
+        <ion-icon name="id-card"></ion-icon>
       </ion-item>
+      <ion-item class="ionItem">
+      <ion-input class="input" placeholder="Contraseña (entre 8 & 20 caracteres)" type="password" minlength="8" maxlength="20" name="pass1"></ion-input>
+        <ion-icon name="lock-closed"></ion-icon>
+      </ion-item>
+
+      <ion-item class="ionItem">
+        <ion-input class="input" placeholder="Confirmar contrasena" type="password" minlength="8" maxlength="20" name="pass2"></ion-input>
+          <ion-icon name="lock-closed"></ion-icon>
+        </ion-item>
       
-        <ion-button expand="block" [routerLink]="['/tabs']" style="width: auto;">Registrate</ion-button>
+        <ion-button expand="block" [routerLink]="['/tabs']" style="width: auto;" type="submit">Registrate</ion-button>
        
       <div class="usuarionuevo">
        <p>¿Ya tienes cuenta? <a [routerLink]="['/login']"> Inicia sesión ahora.</a></p> 

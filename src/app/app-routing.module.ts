@@ -42,7 +42,12 @@ const routes: Routes = [
   {
     path: '**',
     redirectTo: 'notfound'
-  }
+  },
+  {
+    path: 'pag1-graf',
+    loadChildren: () => import('./pag1-graf/pag1-graf.module').then( m => m.Pag1GrafPageModule)
+  },
+  
 ];
 
 @NgModule({

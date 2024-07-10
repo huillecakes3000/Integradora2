@@ -1,10 +1,15 @@
 <ion-content [fullscreen]="true">
+  
   <ion-card>
+    <h1 style="text-align: center;"><b>Perfil de usuario</b></h1>
+    <div style="align-items: center; text-align: center;">
+      <img alt="Porfile picture default" style="width: 250px; height: 250px; border-radius: 50%; object-fit: cover; left: 350px;" src="assets/images/undraw_Pic_profile_re_7g2h.png" />
+    </div>
     <!-- Imagen de perfil -->
-    <img alt="Porfile picture default" style="width: 250px; height: 250px; border-radius: 50%; object-fit: cover; left: 350px;" src="assets/images/undraw_Pic_profile_re_7g2h.png" />
+    
 
     <ion-card-header>
-      <form action="">
+      <form action="" style="text-align: center;">
         <ion-button color="success">
           Cambiar foto de perfil
         </ion-button>
@@ -16,7 +21,7 @@
           header="Alerta!"
           [buttons]="alertButtons"
           (didDismiss)="setResult($event)"
-        > ¿Estas seguro de eliminar la foto?</ion-alert>
+        ></ion-alert>
       </form>
       <!-- Botón para cambiar foto de perfil -->
      
@@ -24,33 +29,40 @@
       <!-- Formulario con campos no editables -->
       
         <div class="ion-padding">
-          <h2><b>Información general del usuario</b></h2>
+          
           <!-- Campo de nombre de usuario -->
+          <h3 style="text-align: center;"><b>Información personal</b></h3>
            <form action="">
             <ion-item class="ionItem">
-              <ion-input placeholder="Usuario" class="input" readonly></ion-input>
-              <ion-icon name="person-outline"></ion-icon>
+              <ion-input placeholder="" class="input" readonly></ion-input>
+              <ion-icon name="person"></ion-icon>
             </ion-item>
             <ion-item class="ionItem">
-              <ion-input placeholder="Correo electrónico" class="input" type="email" readonly></ion-input>
+              <ion-input placeholder="" class="input" readonly></ion-input>
+              <ion-icon name="id-card"></ion-icon>
+            </ion-item>
+            <ion-item class="ionItem">
+              <ion-input placeholder="" class="input" type="email" readonly></ion-input>
               <ion-icon name="mail-sharp"></ion-icon>
             </ion-item>
            </form>
            <form action="">
-            <ion-card-content>
-              Cambio de contraseña
-             </ion-card-content>
+            <h3 style="text-align: center;"><b>Cambio de contraseña</b></h3>
             <ion-item class="ionItem">
               <ion-input placeholder="Contraseña anterior" class="input" type="password"></ion-input>
-              <ion-icon name="lock-closed-outline"></ion-icon>
+              <ion-icon name="lock-closed"></ion-icon>
             </ion-item>
             <ion-item class="ionItem">
               <ion-input placeholder="Contraseña nueva" class="input" type="password"></ion-input>
-              <ion-icon name="lock-closed-outline"></ion-icon>
+              <ion-icon name="lock-closed"></ion-icon>
             </ion-item>
-            <ion-button color="">
-              Cambiar contraseña
-            </ion-button>
+            <ion-button id="present-alert">Cambiar contraseña</ion-button>
+            <ion-alert
+              trigger="present-alert"
+              header="Alerta!"
+              [buttons]="alertButtons"
+              (didDismiss)="setResult($event)"
+            ></ion-alert>
           </form>
         </div>
     </ion-card-header>

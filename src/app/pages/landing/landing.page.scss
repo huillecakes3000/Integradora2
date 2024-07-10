@@ -2,18 +2,16 @@
 
 /* Definir estilos de tipografía globalmente */
 .landing {
-  font-family: 'Playwrite FR Moderne', sans-serif; 
+  font-family: 'Playwrite FR Moderne', sans-serif;
+  text-align: center;
+  align-items: center;
   
 }
 
 
 
 .container{
-    text-align: center;
+  
     margin-top: 20%;
-    
-  justify-content: center; /* Centra horizontalmente */
-  align-items: center; /* Centra verticalmente */
-
 
 }
