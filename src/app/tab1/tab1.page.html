@@ -1,43 +1,57 @@
 
 <ion-content [fullscreen]="true">
-  <h1 style="text-align: center;color: rgb(133, 132, 132); "><b>Campos de cultivo</b></h1>
-  <ion-content color="light">
-    <div class="accordion" id="accordionExample">
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-            Accordion Item #1
-          </button>
-        </h2>
-        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-          <div class="accordion-body">
-            <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-          </div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-            Accordion Item #2
-          </button>
-        </h2>
-        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-          <div class="accordion-body">
-            <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-          </div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-            Accordion Item #3
-          </button>
-        </h2>
-        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-          <div class="accordion-body">
-            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-          </div>
-        </div>
-      </div>
-    </div>
-</ion-content>
+  <h1 style="text-align: center;"><b style="color: rgb(131, 131, 131);">Campos de cultivo</b></h1>
+  <ion-card>
+    <ion-card-header>
+      <img alt="Silhouette of mountains" src="assets/images/undraw_Blooming_re_2kc4.png" style="max-height: 650px; max-width: 650px;" />
+      <ion-card-title>Campo 1 - Tomates</ion-card-title>
+      
+    </ion-card-header>
+  
+    <ion-card-content>
+      <!--Humedad-->
+      <ion-icon name="water-outline"></ion-icon>
+      <b>Humedad: </b> 98% 
+      <br>
+      <!--Temperatura-->
+      <ion-icon name="thermometer-outline"></ion-icon>
+      <b>Temperatura: </b> 22°C
+      <!--Regar ahora-->
+    </ion-card-content>
+   <!--Regar ahora-->
+    <ion-button fill="clear">Regar ahora</ion-button>
+    <!--cambiar hora de riego-->
+    <ion-button fill="clear">Cambiar hora de riego</ion-button>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <img alt="Silhouette of mountains" src="assets/images/undraw_Blooming_re_2kc4.png" style="max-height: 650px; max-width: 650px;" />
+      <ion-card-title>Campo 2 - Lechugas</ion-card-title>
+      
+    </ion-card-header>
+  
+    <ion-card-content>
+      <!--Humedad-->
+      <ion-icon name="water-outline"></ion-icon>
+      <b>Humedad: </b> 78% 
+      <br>
+      <!--Temperatura-->
+      <ion-icon name="thermometer-outline"></ion-icon>
+      <b>Temperatura: </b> 28°C
+      <!--Regar ahora-->
+    </ion-card-content>
+   <!--Regar ahora-->
+    <ion-button fill="clear">Regar ahora</ion-button>
+    <!--cambiar hora de riego-->
+    <ion-button fill="clear">Cambiar hora de riego</ion-button>
+  </ion-card>
+
+
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed" style="margin-bottom: 40px;">
+    <ion-fab-button [routerLink]="['/login']">
+      <ion-icon name="add-outline"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+    </ion-content>
