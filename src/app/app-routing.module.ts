@@ -47,6 +47,10 @@ const routes: Routes = [
     path: 'pag1-graf',
     loadChildren: () => import('./pag1-graf/pag1-graf.module').then( m => m.Pag1GrafPageModule)
   },
+  {
+    path: 'addground',
+    loadChildren: () => import('./pages/addground/addground.module').then( m => m.AddgroundPageModule)
+  },
   
 ];
 

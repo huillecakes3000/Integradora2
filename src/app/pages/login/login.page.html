@@ -4,18 +4,17 @@
     <p class="subTittle">Inicia sesión para acceder a tu cuenta</p>
   </div>
 
-  <form action="">
     <div class="ion-padding">
       <ion-item class="ionItem">
-        <ion-input placeholder="Usuario" class="input"></ion-input>
+        <ion-input placeholder="Usuario" class="input" [(ngModel)]="credentials.username"></ion-input>
         <ion-icon name="person-outline"></ion-icon>
       </ion-item>
       <ion-item class="ionItem">
-      <ion-input placeholder="Contraseña" class="input" type="password"></ion-input>
+      <ion-input placeholder="Contraseña" class="input" type="password" [(ngModel)]="credentials.password"></ion-input>
         <ion-icon name="lock-closed-outline"></ion-icon>
       </ion-item>
       
-        <ion-button expand="block" [routerLink]="['/tabs']">Iniciar sesion</ion-button>
+        <ion-button expand="block" (click)="login()">Iniciar sesion</ion-button>
       
       <br>
       <div class="contrasenaolvidada">
@@ -29,7 +28,4 @@
       </div>
     </div>
 
-  </form>
-
-  
 </ion-content>

@@ -8,15 +8,18 @@
       
     </ion-card-header>
   
-    <ion-card-content>
-      <!--Humedad-->
+    <ion-card-content >
+      <!-- Humedad -->
       <ion-icon name="water-outline"></ion-icon>
-      <b>Humedad: </b> 98% 
+      <div *ngIf="Humedad !== null">
+        <b>Humedad: </b> {{ Humedad }}
+      </div>
       <br>
-      <!--Temperatura-->
+      <!-- Temperatura -->
       <ion-icon name="thermometer-outline"></ion-icon>
-      <b>Temperatura: </b> 22°C
-      <!--Regar ahora-->
+      <div *ngIf="Temperatura !== null">
+        <b>Temperatura: </b> {{ Temperatura }}
+      </div>
     </ion-card-content>
    <!--Regar ahora-->
     <ion-button fill="clear">Regar ahora</ion-button>
@@ -32,14 +35,16 @@
     </ion-card-header>
   
     <ion-card-content>
-      <!--Humedad-->
       <ion-icon name="water-outline"></ion-icon>
-      <b>Humedad: </b> 78% 
+      <div *ngIf="Humedad !== null">
+        <b>Humedad: </b> {{ Humedad }}
+      </div>
       <br>
-      <!--Temperatura-->
+      <!-- Temperatura -->
       <ion-icon name="thermometer-outline"></ion-icon>
-      <b>Temperatura: </b> 28°C
-      <!--Regar ahora-->
+      <div *ngIf="Temperatura !== null">
+        <b>Temperatura: </b> {{ Temperatura }}
+      </div>
     </ion-card-content>
    <!--Regar ahora-->
     <ion-button fill="clear">Regar ahora</ion-button>
@@ -50,7 +55,7 @@
 
 
   <ion-fab vertical="bottom" horizontal="end" slot="fixed" style="margin-bottom: 40px;">
-    <ion-fab-button [routerLink]="['/login']">
+    <ion-fab-button [routerLink]="['/addground']">
       <ion-icon name="add-outline"></ion-icon>
     </ion-fab-button>
   </ion-fab>
